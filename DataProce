@@ -62,7 +62,7 @@ plt.tight_layout()
 
 plt.savefig(r'C:\Users\crist\OneDrive\Escritorio\archivos_MDD\Proyecto_Final\Imagen1.png', dpi=300)
 
-//Imagen1//
+#//Imagen1//
 
 #Combinamos las columnas Fecha y Hora
 df.loc[:,'datetime'] = pd.to_datetime(df.Date.astype(str) + ' ' + df.Time.astype(str))
@@ -100,7 +100,7 @@ plt.tight_layout()
 
 plt.savefig(r'C:\Users\crist\OneDrive\Escritorio\archivos_MDD\Proyecto_Final\Imagen2.png', dpi=300)
 
-//Imagen 2//
+#//Imagen 2//
 
 #Guardamos el dataframe ya procesado
 hourly_df.to_csv(r'C:\Users\crist\OneDrive\Escritorio\archivos_MDD\Proyecto_Final\household_power_consumption-proce.txt', header=True, index=False)
