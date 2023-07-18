@@ -1,9 +1,0 @@
-#Empieza la Caracterizacion para los data set de entremaineto, validacion y testeo
-
-#Resumen Estadistico de los datos de cada fila
-hourly_df.describe().transpose()
-
-#Se dropea la columna 'Submetering_1 por su bajo aporte estadistico'
-hourly_df = hourly_df.drop(['Sub_metering_1'], axis=1)
-hourly_df.head()
-
